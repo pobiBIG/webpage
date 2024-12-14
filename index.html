@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PEOPLE'S</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- 구글 폰트 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+</head>
+
+<body class="bg-black" data-bs-target="#nav-menu">
+    <!-- 네비게이션 영역 시작 -->
+    <nav class="navbar navbar-expand-md bg-white fixed-top">
+        <div class="container-fluid">
+            <a href="#" class="text-decoration-none">
+                <h1 class="m-0 display-5 font-weight-semi-bold">
+                    <span class="font-weight-bold px-3 mr-1">P'</span>
+                </h1>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav-menu"
+                aria-controls="nav-menu" aria-expanded="false" aria-label="메뉴">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="nav-menu">
+                <div class="navbar-nav me-auto py-0">
+                    <a href="index.html" class="nav-item nav-link active text-bg-light">Home</a>
+                    <a href="people.html" class="nav-item nav-link text-bg-light">People</a>
+                    <a href="register.html" class="nav-item nav-link text-bg-light">Register</a>
+                </div>
+                <div class="navbar-nav ms-auto py-0">
+                    <a href="#" class="nav-item nav-link text-bg-light">Login</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- 네비게이션 영역 끝 -->
+
+    <!--헤더 영역 시작-->
+    <header id="header-carousel" class="carousel slide mx-auto" style="max-width: 1903px;" data-bs-ride="carousel">
+        <div class="d-flex flex-column justify-content-center align-items-center">
+            <div class="carousel-inner">
+                <div class="carousel-item active" style="height: 600px;">
+                    <img class="img-fluid w-100" src="./img/banner1.jpg" alt="Image" style="object-fit: cover; height: 100%;">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="p-3 text-center" style="max-width: 700px;">
+                            <h2 class="text-light text-uppercase font-weight-semi-bold mb-2">PEOPLE'S</h2>
+                            <h4 class="display-4 text-white font-weight-semi-bold mb-4">NEW</h4>
+                            <a href="#" class="btn btn-light py-2 px-3">바로가기</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item" style="height: 600px;">
+                    <img class="img-fluid w-100" src="./img/banner3.jpg" alt="Image" style="object-fit: cover; height: 100%;">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="p-3 text-center" style="max-width: 700px;">
+                            <h2 class="text-light text-uppercase font-weight-semi-bold mb-2">PEOPLE'S</h2>
+                            <h4 class="display-4 text-white font-weight-semi-bold mb-4">HOT</h4>
+                            <a href="#" class="btn btn-light py-2 px-3">바로가기</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#header-carousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </header>
+    <!-- 헤더 영역 끝 -->
+
+    <!--menu 선택-->
+    <section class="bg-white container-fluid overflow-hidden py-5" id="portfolio">
+        <div class="text-center py-3 mb-5">
+            <h2>Contact service</h2>
+        </div>
+        <div class="row mb-5 g-4">
+            <!-- 카드 1 -->
+            <div class="col-md-6">
+                <a href="people.html" class="text-decoration-none">
+                    <div class="card-hover card-person shadow rounded h-100 d-flex flex-column justify-content-between p-4">
+                        <div>
+                            <h3 class="fw-bold">Person of the Year</h3>
+                            <p>올해 가장 인기가 많았던 모델들을 모아놨습니다. 경력이 있고 뛰어난 사람을 원한다면 CLICK!</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+    
+            <!-- 카드 2 -->
+            <div class="col-md-6">
+                <a href="people.html" class="text-decoration-none">
+                    <div class="card-hover card-newface shadow rounded h-100 d-flex flex-column justify-content-between p-4">
+                        <div>
+                            <h3 class="fw-bold">NEW FACE</h3>
+                            <p>어디에서도 보지 못한 새로운 모델의 포트폴리오에 관심이 있다면 CLICK!</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+    
+            <!-- 카드 3 -->
+            <div class="col-md-6">
+                <a href="people.html" class="text-decoration-none">
+                    <div class="card-hover card-hotface shadow rounded h-100 d-flex flex-column justify-content-between p-4">
+                        <div>
+                            <h3 class="fw-bold">HOT FACE</h3>
+                            <p>오늘 하루동안 광고주들이 자주 본 모델들을 알고싶다면 CLICK!</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+    
+            <!-- 카드 4 -->
+            <div class="col-md-6">
+                <a href="people.html" class="text-decoration-none">
+                    <div class="card-hover card-potential shadow rounded h-100 d-flex flex-column justify-content-between p-4">
+                        <div>
+                            <h3 class="fw-bold">POTENTIAL FACE</h3>
+                            <p>잠재적인 능력이 있지만 아직 알려지지 않은 모델들을 알고싶다면 CLICK!</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+crossorigin="anonymous"></script>
+</body>
+
+</html>

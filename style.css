@@ -1,0 +1,85 @@
+.nav-link:hover,
+.nav-link.active {
+    color: #0e72ff !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+.anton-regular {
+    font-family: 'Anton', serif;
+}
+
+h1{
+    color: rgb(14, 82, 255);
+}
+
+h2{
+    color: rgb(0, 0, 0);
+}
+
+/* 헤더 영역 */
+header {
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)), url(images/main-bg.jpg);
+    background-size: cover;
+    background-position: center top;
+    background-attachment: fixed;
+}
+
+.card-hover {
+    position: relative; /* 자식 요소인 배경 이미지에 위치를 맞추기 위해 설정 */
+    background-color: white; /* 기본 배경: 흰색 */
+    color: gray; /* 기본 텍스트 색: 회색 */
+    overflow: hidden; /* 자식 요소의 넘침을 숨김 */
+    transition: all 0.3s ease-in-out; /* 부드러운 전환 효과 */
+}
+
+.card-hover::before {
+    content: ''; /* 가상 요소 생성 */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0; /* 초기 상태: 보이지 않음 */
+    transition: opacity 0.3s ease-in-out; /* 부드러운 투명도 전환 */
+    z-index: 0; /* 텍스트 아래에 배치 */
+}
+
+/* 각 카드별 배경 이미지 */
+.card-person::before {
+    background-image: url('./img/banner1.jpg');
+}
+
+.card-newface::before {
+    background-image: url('./img/banner2.jpg');
+}
+
+.card-hotface::before {
+    background-image: url('./img/banner3.jpg');
+}
+
+.card-potential::before {
+    background-image: url('./img/banner4.jpg');
+}
+
+/* 마우스 오버 시 배경 이미지 표시 */
+.card-hover:hover::before {
+    opacity: 1; /* 배경 이미지 나타남 */
+}
+
+/* 카드 내용 스타일 */
+.card-hover div {
+    position: relative;
+    z-index: 1; /* 가상 요소보다 위에 표시 */
+}
+
+/* 카드 내부 텍스트에도 동일한 효과 */
+.card-hover:hover h3,
+.card-hover:hover p {
+    color: rgb(14, 82, 255); /* 텍스트가 파란색으로 변환 */
+}
